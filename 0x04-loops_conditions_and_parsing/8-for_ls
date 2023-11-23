@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Displays the names of all unhidden files in a directory, after the hyphen(-) 
+
+for i in *
+do
+	if [ -f "$i" ] && [[ ! "$i" == .* ]]; then
+
+		filename=$(echo "$i" | cut -d'-' -f2-)
+		echo "$filename"
+	fi
+done
