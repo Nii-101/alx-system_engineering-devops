@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays the bash PID
+# shellcheck disable=SC2009
+
+ps auxf | awk /'bash'/
