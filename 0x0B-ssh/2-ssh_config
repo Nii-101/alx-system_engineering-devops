@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Settings for hosts
+# The settings for hosts
 
 Host 34.201.61.231
     IdentityFile ~/.ssh/school 
