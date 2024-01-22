@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Settings for hosts
+
+Host 34.201.61.231
+    IdentityFile ~/.ssh/school 
+    PasswordAuthentication no
