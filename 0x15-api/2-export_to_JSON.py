@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Exports data in the json format
+Export data in the JSON format
 """
 
-import csv
+import json
 import requests
 import sys
 

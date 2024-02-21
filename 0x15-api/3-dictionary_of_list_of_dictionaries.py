@@ -19,4 +19,4 @@ if __name__ == "__main__":
                 "username": u.get("username")
             } for t in requests.get(api_url + "todos",
                                     params={"userId": u.get("id")}).json()]
-            for u in users}, jsonfile)#!/usr/bin/python3
+            for u in users}, jsonfile)
