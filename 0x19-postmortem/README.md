@@ -1,10 +1,10 @@
 <img src=./post-mortem_meme.webp width=100%>
 
-# Currency Converter Postmorterm Report
-In this blog, I share my experience on an error that occured on one of the projects I built for a client, a realtime currency converter.
+# GPA Calculator Postmorterm Report
+In this blog, I share my experience on an error that occured on one of the projects I built for a friend, a gpa calculator.
 
 ## Summary and Root cause
-About 6 months ago, I was called by my client that his users were seeing a 500 server error anytime they visit the url to do a currency conversion. The root cause was that the provider serving us the exchange rate had changed their API response format. 
+About a wek ago, My friend called that he was seeing a 500 server error anytime he visits the url to do a gpa calculation. 
 
 ## Timeline
 - The error was realized on Friday 8th September, 2023 around 1300 hours (GMT) when the users of the website started experiencing 500 server error. 
@@ -26,7 +26,7 @@ About 6 months ago, I was called by my client that his users were seeing a 500 s
 The currency converter was built with a laravel backend to fetch the exchange rates every hour from a free provider (of course things subcriptions are not friendly to africans). The project worked fine for about four months until the exchange rate API provider decided to change their response data variables. This meant that the application was referencing and parsing data with undefined variables. 
 
 
-In fixing the issue, I put the website into maintenance mode and I read through the error logs and noticed _Undefined array index currency_. As if that was the end, there were a couple similar errors as. I had to re-write some portion of the codes especailly the portions that made the API call (parameters had changed) and the portions that parses the API response. Code was pushed back and the website was back online.
+In fixing the issue, I put the website into maintenance mode and I read through the error logs and noticed _Undefined array index_. As if that was the end, there were a couple similar errors as. I had to re-write some portion of the codes especailly the portions that made the API call (parameters had changed) and the portions that parses the API response. Code was pushed back and the website was back online.
 
 ## Measures against such problem in future
 - Purchase subscripitons of such important API service providers. They usually pre-notify premium users about these changes to their API.
