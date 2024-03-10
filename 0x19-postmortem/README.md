@@ -1,3 +1,5 @@
+<img src=./post-mortem_meme.webp width=100%>
+
 # Currency Converter Postmorterm Report
 In this blog, I share my experience on an error that occured on one of the projects I built for a client, a realtime currency converter.
 
